@@ -15,13 +15,14 @@
     </div>
     <script>
         function verificar() {
-            var p = window.document.querySelector('input#txtpais')
+           var p = window.document.getElementById(`txtpais`)
+           // var p = "eua"
             var res = window.document.querySelector('div#res')
-            res.innerHTML = `<p>você vive em ${p}</p> `
-            if (p = "brasil") {
-                res.innerHTML += `<p>você é Brasileiro`
+            res.innerHTML = `você vive em ${p}`
+          if (p == "BRASIL") {
+                res.innerHTML += `<p>você é Brasileiro</p>`
             } else {
-                res.innerHTML += `<p>você é Estrangeiro`
+                res.innerHTML += `<p>você é Estrangeiro</p>`
             }
         }
     </script>
