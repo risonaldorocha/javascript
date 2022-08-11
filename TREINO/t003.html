@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOTO</title>
+    <style>
+        body{
+            background: blue;
+        }
+        div {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="res">
+        Qual a sua idade: 
+        <input type="number" name="idade" id="idade">
+        <input type="button" value="verificar" onclick="verificar()">
+    </div>
+    <script>
+        function verificar (){
+            var idade = window.document.getElementById(`idade`)
+            var i = Number(idade.value)
+            var res = window.document.getElementById(`res`)
+            if(i < 16) {
+                var res = window.document.write(`Menor de idade - NÃO VOTA`)
+            } else if(i < 18){
+                var res = window.document.write(`VOTA OPCIONAL`)
+            } else {
+                var res = window.document.write(`MAIOR DE IDADE - VOTA`)
+            }
+            
+            
+        }
+    </script>
+    
+</body>
+</html>
