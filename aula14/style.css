@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+}
+body {
+    background: rgba(8, 8, 209, 0.637);
+}
+section {
+    background: white;
+    padding: 20px;
+}
